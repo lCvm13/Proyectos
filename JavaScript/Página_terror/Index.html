@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1 minimum-scale=1">
+  <title>Principal</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body id="body">
+
+  <header class="header">
+    <!-- LOGO-->
+    <div class="logo">
+      <a href="Index.html"><img id="imalogo" src="./imagenes/terror_party.png"></a>
+    </div>
+    <!-- Menu inicial con sus correspondientes enlaces   -->
+    <div id="menuNavegacion">
+      <nav class="menu">
+        <ul id="menuPrincipal" class="list-group list-group-horizontal">
+          <li class="list-group-item list-group-item-danger" class="enlaceD"><a href="Index.html">Inicio</a></li>
+          <li class="list-group-item list-group-item-danger" class="enlaceD"><a href="Acertijos.html">Acertijos</a></li>
+          <li class="list-group-item list-group-item-danger" class="enlaceD"><a href="Historias.html">Historias</a></li>
+          <li class="list-group-item list-group-item-danger" class="enlaceD"><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Buscador con lupa por palabras-->
+    <div class="buscador">
+      <label>Buscar: </i></label>
+      <input type="text" name="search" id="search">
+      <button type="submit" id="botonBusqueda"><i class='fas fa-search' style='font-size:24px'></i></button>
+    </div>
+  </header>
+  <!-- Menu lateral (izquierda) con las opciones para el usuario   -->
+  <div id="botonesAjustes">
+    <aside id="latiz" class="lateralizq">
+      <!-- Boton de modal -->
+      <div id="menuLateral" class="menuLateral">
+        <a href="javascript:void(0)" id="closebtn" class="closebtn">×</a>
+        <!-- Boton modal ajustes-->
+        <button id="botonAjustes" type="button" class="btn btn-secondary" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
+          <i class='fas fa-wrench' style='font-size:36px;padding:9px;'></i>
+        </button>
+      </div>
+
+      <div id="main">
+        <button id="openbtn" class="openbtn">☰</button>
+      </div>
+      <!-- Contenido Modal Ajustes -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p></p>
+              <span class="modal-title fs-5" id="staticBackdropLabel">AJUSTES</span>
+              <button id="botonCerrarModal" type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- MODAL ESCOGER CAMBIAR COLOR DEL TEMA-->
+              <span>Estilo tema claro u oscuro</span>
+              <button class="btn btn-secondary" id="botonTema">
+                <i id="iconoDiaNoche" class="bi bi-brightness-high-fill"></i>
+              </button>
+
+              <!-- MODAL ESCOGER MUSICA-->
+              <span>Selecciona la canción que quieres que suene de fondo <br> <b>No olvides de activar que suene la
+                  música de fondo</b></span>
+              <div>
+                <img id="imagenesRota" src="imagenes/exorcista.jpg" name="0"
+                  alt="Imagen de la niña del exorcista"></img>
+              </div>
+
+              <!-- MODAL ACTIVAR/DESACTIVAR REPRODUCIR MUSICA-->
+              <span>Activar/desactivar musica de fondo <br>
+                (predeterminado esta desactivado)</span>
+              <button type="button" class="btn btn-secondary" id="botonToggleMusica">
+                <i id="iconoMusica" class='fas fa-music'></i>
+              </button>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <main class="principal">
+    <!-- Contenido central    -->
+
+    <section id="secCentro" class="centro">
+      <h1>Inicio</h1>
+      <p>Trabajo hecho por Cosmin-Valentín Movila Movila <br>
+        <b>Advertencia: Este trabajo contiene screamers</b> <br>
+        La web contiene: <br>
+        -Una página de acertijos donde puedes poner a prueba tu inteligencia, resolviendo acertijos divertidos. <br>
+        Dicha página contiene un botón, arriba a la derecha de la página, que te dará una pista por si te quedas
+        atascado en un acertijo <br>
+        -Una página de historias de terror cortas para entretenerte o inquietarte. <br>
+        -En ambas páginas podrás añadir un acertijo o historia que te guste a la página de favoritos que tendrán los
+        enlaces para poderlos visitar rápidamente. <br>
+        -En todas las páginas tendrás un botón de ajustes para decidir el tema de la página (claro u oscuro) o si
+        quieres tener una canción de fondo. <br>
+        -En las páginas de acertijos e historia además del boton de ajustes, tendrás un botón para acceder a todos los
+        elementos de la página (si estas en la página de acertijos podrás elegir con los enlaces qué acertijo quieres
+        ver en concreto) <br>-En todas las páginas tendrás un buscador para escribir lo que quieras buscar. Si lo que
+        buscas existe en la página, serás redirigido a una página que te proporcionará los enlaces que se ajusten a tu
+        búsqueda. <br>
+        -Para navegar por las páginas tienes un menú de navegación en la parte superior de la pantalla. <br>
+        <b>Disfruta</b>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer con la posición en la web donde estás   -->
+
+  <footer class="footer">
+    <span id="parrafo">Estás en: <b>Indice</b></span>
+  </footer>
+ <!-- Audios usados para la web -->
+  <audio id="cancion" src="audios/madison.mp3"></audio>
+  <audio id="exorcista" src="audios/exorcista.mp3"></audio>
+  <audio id="jigsaw" src="audios/jigsaw.mp3"></audio>
+  <audio id="michael" src="audios/michael.mp3"></audio>
+
+  <script src="https://kit.fontawesome.com/294e193299.js" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script type="module" src="scripts.js"></script>
+</body>
+
+</html>

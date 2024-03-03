@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="blueE.xsl"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="blue.xsd">
+   <titulo>Blue Knees</titulo>
+   <autor>MADiSON</autor>
+   
+   <letra>
+       <estrofa>
+         <verso>Aahh~</verso>
+            <verso>Blue knees is behind and will find, what he has been looking for...</verso>
+            <verso>For so long, all alone, where he... belongs</verso>
+        </estrofa>
+         <estrofa>
+            <verso>Aahh~</verso>
+            <verso>Blue knees is behind and will find, what he has been looking for...</verso>
+            <verso>all over the kitchen, where he's written, this song... just for you</verso>
+        </estrofa>
+         <estrofa>
+         <verso>Aahh~</verso>
+            <verso>Blue knees is behind and will find, what he has been looking for...</verso>
+            <verso>For so long, all alone, where he... belongs</verso>
+        </estrofa>
+         <estrofa>
+            <verso>Aahh~</verso>
+            <verso>Blue knees is behind and will find, what he has been looking for...</verso>
+            <verso>all over the kitchen, where he's written, this song... just for you</verso>
+        </estrofa>
+        <estrofa>
+         <verso>Aahh~</verso>
+            <verso>Blue knees is behind and will find, what he has been looking for...</verso>
+            <verso>For so long, all alone, where he... belongs</verso>
+        </estrofa>
+         <estrofa>
+            <verso>Aahh~</verso>
+            <verso>Blue knees is behind and will find, what he has been looking for...</verso>
+            <verso>all over the kitchen, where he's written, this song... just for you</verso>
+        </estrofa>
+    </letra>
+</cancion>

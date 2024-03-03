@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body id="todo" onload="aplicarCambios()">
+    <!------------------------------Menu---------------------------------->
+    <nav class="menu">
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Ajustes.html">Ajustes</a></li>
+            <li><a href="xml.html">XML</a></li>
+          <li> 
+            <div id="sol">
+            <input id="ver" type="button" onclick="mostrarModal()" value="Modal">
+            <input id="ocultar" type="button" onclick="ocultarModal()" value="Ocultar modal">
+        </div>
+        </li>
+        </ul>
+      </nav>
+      <!------------------------------Texto del modal---------------------------------->
+      <div id="solucion">
+        <p>Trabajo hecho por Cosmin-Valentín Movila 1DAW
+            <br><br>
+            ALERTA: ESTE TRABAJO CONTIENE UN SCREAMER. RECOMENDABLE ESTAR PREPARADO.
+            <br><br>
+            La página contiene los siguientes elementos:
+            <br><br>
+            Menú que contiene los enlaces a las distintas páginas disponibles junto a este modal.
+            <br><br>
+            Página de ajustes donde se podrá ajustar el diseño del texto dandole sombra, elegir la imagen del fondo
+            y se podrá insertar un nombre que pertenecera al usuario. Dichos ajustes se guardan para las demas páginas
+            <br><br>
+            Página de inicio donde habrá una pregunta con tres botones de las cuales una es un prompt para resolver la pregunta,
+            otro boton es para rendirse que mandará al usuario a la página que contiene el xml
+            y el ultimo boton es un boton trampa que contiene un screamer que dura 1 segundo, tiene sonido y video.
+            <br><br>
+            Página xml simple que tiene el xml en un iframe y contiene un boton para reproducir la cancion de la que hace referencia el xml.
+        </p>
+    </div>
+
+    <!------------------------------XML que se monstrará en un iframe---------------------------------->
+    <div id="zonaXML">
+    <h1 class="section-heading" style="font-size: xx-large;background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">Perdiste</h1>
+    <h2 style="background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">Letra de la cancion de derrota</h2>
+    <iframe src="xml/blue.xml"></iframe>
+    </div>
+    <!------------------------------Audio que se escuchara de fondo---------------------------------->
+    <button id="botonCancion" onclick="cancion()">Pulsa si quieres que suene la cancion</button>
+    <audio id="cancion" src="audios/madison.mp3"></audio>
+    <div id="nombreUsuario">Desconocido</div>
+    <!------------------------------Script que contiene la funcion que permite reproducir un audio---------------------------------->
+    <script>
+        function cancion(){
+        let cancion=document.getElementById("cancion");
+        cancion.play()
+        }
+    </script>
+    <script src="Script.js"></script>
+</body>
+</html>

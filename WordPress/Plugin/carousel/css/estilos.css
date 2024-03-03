@@ -1,0 +1,47 @@
+#carouseles img{
+    width: 200px;
+    height: 200px;
+}
+
+#form_carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+#form_imagenes{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+
+}
+#form_imagenes div{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+#wpbody-content{
+    width: 100%;
+    height: 100%;
+}
+
+#carouseles{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+#carouseles > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+td span{
+    color:red;
+    text-decoration: underline;
+}
+td span:hover{
+    cursor: pointer;
+}
+

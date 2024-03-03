@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body id="body">
+
+  <header class="header">
+    <!-- LOGO-->
+    <div class="logo">
+      <a href="Index.html"><img id="imalogo" src="./imagenes/terror_party.png"></a>
+    </div>
+    <!-- Menu inicial con sus correspondientes enlaces   -->
+    <div id="menuNavegacion">
+      <nav class="menu">
+        <ul id="menuPrincipal" class="list-group list-group-horizontal">
+          <li class="list-group-item list-group-item-danger" class="enlaceD"><a href="Index.html">Inicio</a></li>
+          <li class="list-group-item list-group-item-danger" class="enlaceD"><a href="Acertijos.html">Acertijos</a></li>
+          <li class="list-group-item list-group-item-danger" class="enlaceD"><a href="Historias.html">Historias</a></li>
+          <li class="list-group-item list-group-item-danger" class="enlaceD"><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Buscador con lupa por palabras-->
+    <div class="buscador">
+      <label>Buscar: </i></label>
+      <input type="text" name="search" id="search">
+      <button type="submit" id="botonBusqueda"><i class='fas fa-search' style='font-size:24px'></i></button>
+    </div>
+  </header>
+  <!-- Menu lateral (izquierda) con las opciones para el usuario   -->
+  <div id="botonesAjustes">
+    <aside id="latiz" class="lateralizq">
+      <!-- Boton de modal -->
+      <div id="menuLateral" class="menuLateral">
+        <a href="javascript:void(0)" id="closebtn" class="closebtn">×</a>
+        <!-- Boton modal ajustes-->
+        <button id="botonAjustes" type="button" class="btn btn-secondary" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
+          <i class='fas fa-wrench' style='font-size:36px;padding:9px;'></i>
+        </button>
+        <!-- Boton modal enlaces -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+          <i class="bi bi-link" style='font-size:36px;padding:9px;'></i>
+        </button>
+      </div>
+
+      <div id="main">
+        <button id="openbtn" class="openbtn">☰</button>
+      </div>
+      <!-- Contenido Modal Ajustes -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p></p>
+              <span class="modal-title fs-5" id="staticBackdropLabel">AJUSTES</span>
+              <button id="botonCerrarModal" type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- MODAL ESCOGER CAMBIAR COLOR DEL TEMA-->
+              <span>Estilo tema claro u oscuro</span>
+              <button class="btn btn-secondary" id="botonTema">
+                <i id="iconoDiaNoche" class="bi bi-brightness-high-fill"></i>
+              </button>
+
+              <!-- MODAL ESCOGER MUSICA-->
+              <span>Selecciona la canción que quieres que suene de fondo <br> <b>No olvides de activar que suene la
+                  música de fondo</b></span>
+              <div>
+                <img id="imagenesRota" src="imagenes/exorcista.jpg" name="0"
+                  alt="Imagen de la niña del exorcista"></img>
+              </div>
+
+              <!-- MODAL ACTIVAR/DESACTIVAR REPRODUCIR MUSICA-->
+              <span>Activar/desactivar musica de fondo <br>
+                (predeterminado esta desactivado)</span>
+              <button type="button" class="btn btn-secondary" id="botonToggleMusica">
+                <i id="iconoMusica" class='fas fa-music'></i>
+              </button>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary"><i style="font-size: 20px;"
+                  class="fa-solid fa-rotate-right"></i></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="botonAplicar">Aplicar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal para enlaces -->
+      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p></p>
+              <span class="modal-title fs-5" id="staticBackdropLabel">Enlaces</span>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Div donde se insertaran los enlaces de la página correspondiente. -->
+            <div id="EnlacesDPagina" class="modal-body">
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <aside id="pista" class="lateralizq">
+      <!-- Boton de modal -->
+      <button type="button" id="bPista" class="btn btn-secondary" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop2">
+        <i class='bi bi-lightbulb' style='font-size:20px'></i>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p></p>
+              <span class="modal-title fs-5" id="staticBackdropLabel">Pista</span>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" id="botonCP" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <span>¿Quieres una pista? ->
+              </span>
+              <button type="button" class="btn btn-danger" id="botonPista">¿Seguro?</button>
+              <div id="modal-pista">
+                <p>
+                  <span id="pistaAqui"></span>
+                </p>
+                <button type="button" class="btn-close" id="botonPistaOcultar"></button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="botonCancelar" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <main class="principal">
+    <!-- Contenido central    -->
+
+    <section id="secCentroAcertijos" class="centro">
+      <div class="cuerpoPagina">
+        <!-- Div donde se insertaran los botones con las respuestas a los ejercicios-->
+        <div id="respuestas">
+
+        </div>
+      </div>
+      <br>
+      <div class="cuerpoBotones">
+        <button class="btn btn-warning" id="botonAnterior">Anterior</button>
+        <button class="btn btn-warning" id="botonSiguiente">Siguiente</button>
+      </div>
+      <br>
+      <div>
+        <label for="fav">Añadir a favoritos: </label>
+        <button class="btn btn-secondary" id="botonFavorito">❤️</button>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer con las redes sociales de interes   -->
+
+  <footer class="footer">
+    <span id="parrafo">Estás en: <b>Acertijos</b></span>
+  </footer>
+  <!-- Div oculto que tiene el screamer de la página -->
+  <div class="scare" id="scareDiv">
+    <video id="video" class="video" src="./videos/video.mp4" loop></video>
+  </div>
+
+  <!-- Audios usados para la web -->
+  <audio id="cancion" src="audios/madison.mp3"></audio>
+  <audio id="exorcista" src="audios/exorcista.mp3"></audio>
+  <audio id="jigsaw" src="audios/jigsaw.mp3"></audio>
+  <audio id="michael" src="audios/michael.mp3"></audio>
+
+  <script src="https://kit.fontawesome.com/294e193299.js" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script type="module" src="scripts.js"></script>
+  <script type="module" src="scripts_acertijos.js"></script>
+
+</body>
+
+</html>

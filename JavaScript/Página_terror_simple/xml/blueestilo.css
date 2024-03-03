@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.aut{
+    font-size: large;
+    color:darkred;
+   }
+h1{
+   color:yellowgreen;
+    display:block;
+    text-align: center;
+    counter-reset: estrofa;
+}
+
+span{
+color:blue;
+background-color: yellow;
+font-weight: bold;
+}
+h2{
+   color:rgb(253, 253, 253);
+    text-align: center;
+    counter-increment: estrofa;
+    counter-reset: verso;
+}
+h2::after{
+    content:counter(estrofa) ": ";
+}
+p{
+    display: block;
+    color:rgb(0, 255, 229);
+    text-align: center;
+ }
+p::before{
+   
+    counter-increment: verso;
+    content: "Verso " counter(verso) ": ";
+}
