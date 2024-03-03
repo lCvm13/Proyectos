@@ -1,0 +1,29 @@
+
+.formulario{
+    margin:10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.formulario>h1{
+    text-align: center;
+}
+
+.registro{
+    display:flex;
+    justify-content: center;
+    
+}
+
+#botonRegistro{
+    margin-left: 2%;
+}
+
+#linkregistro{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+

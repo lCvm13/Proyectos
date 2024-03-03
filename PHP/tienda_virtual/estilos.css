@@ -1,0 +1,47 @@
+.formulario{
+    margin:10%;
+    
+}
+
+.formulario>h1{
+    text-align: center;
+}
+
+.registro{
+    display:flex;
+    justify-content: center;
+    
+}
+
+#botonRegistro{
+    margin-left: 2%;
+}
+
+#linkregistro{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+h1{
+    text-align: center;
+}
+
+#botonTarea{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#linktarea{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.enlacesCarro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

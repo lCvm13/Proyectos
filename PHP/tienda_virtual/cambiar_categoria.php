@@ -1,0 +1,9 @@
+<?php
+session_start();
+?>
+<?php
+include("./funciones.php");
+unset($_SESSION["destacados"]);
+$_SESSION["categoria_seleccionada"]=$_POST["categoria_seleccionada"];
+volver("inicio.php");
+?>

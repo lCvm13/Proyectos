@@ -1,0 +1,153 @@
+body{
+    height:100vh;
+}
+#main{
+    margin:20px;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    height:100vh;
+    display: grid;
+    grid-template-rows: min-content min-content auto;
+}
+.nav-link{
+background-color: goldenrod!important;
+font-weight: bolder!important;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contenedor_entrada{
+    background-color: rgba(255, 255, 255, 0.466);
+}
+#contenedor_entrada>h1{
+    color:blue;
+}
+#contenedor_entrada>p{
+    font-weight: bolder;
+}
+.comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario{
+    display: flex;
+    margin: 40px;
+    gap: 20px;
+    flex-direction: column;
+}
+#botonfiltro{
+    margin-right:10vw;
+}
+.formulario>select{
+    align-self: baseline;
+}
+
+.formulario>h1{
+    text-align: center;
+}
+#botonVolver{
+    justify-self: center;
+}
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tabla_entradas{
+    width: 80vw;
+}
+h1{
+    text-align: center;
+}
+
+button > a{
+    color:white !important; 
+    text-decoration: none !important;
+}
+
+button > p{
+    color:white !important; 
+    text-decoration: none !important;
+}
+
+
+p{
+    text-align: center;
+}
+.modal-footer{
+    justify-content: center !important;
+}
+
+#botones{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:80vw;
+    justify-content: space-between;
+}
+
+
+textarea{
+    height:20vh !important;
+}
+#botonComentario{
+    display: none;
+}
+#contenido_comentario{
+    height:10vh!important;
+}
+
+#cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-warning{
+    background-color: goldenrod;
+    font-weight: bolder;
+    color: white;
+}
+
+.registro{
+    display:flex;
+    justify-content: center;
+    
+}
+
+#botonRegistro{
+    margin-left: 2%;
+}
+
+#linkregistro{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header{
+    padding:15px;
+    width:50vw;
+    justify-self: center;
+}
+header>ul{
+    gap:20px;
+}
+
+#añadir_comentario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 20px;
+    
+}
